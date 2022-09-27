@@ -3,26 +3,35 @@
     <h3 class="text-center">Mande uma mensagem</h3>
     <div id="contato" class="row justify-content-md-center">
         <div class="col col-lg-4">
-            <Form>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="nome">Nome</span>
-                    <input name='nome' type="text" placeholder="Seu Nome" class="form-control" aria-describedby="nome" />
+            <form  [formGroup]="formulario" novalidate (ngSubmit)="enviarMensagem()">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input name='nome' type="text" placeholder="Seu Nome" class="form-control" formControlName="inputNome" required/>
+                        <small *ngIf="nome.valid && (nome.dirty || nome.touched)" class="form-text text-success">Ok</small>
+                        <small *ngIf="nome.invalid && (nome.dirty || nome.touched)" class="form-text text-danger">Nome Inválido</small>
                     </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="email">e-Mail</span>
-                    <input name='email' type="email" placeholder="Seu e-Mail" class="form-control" aria-describedby="email" />
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input name='email' type="email" placeholder="Seu e-Mail" class="form-control" formControlName="inputEmail" />
+                        <small *ngIf="email.valid && (email.dirty || email.touched)" class="form-text text-success">Ok</small>
+                        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="form-text text-danger">e-Mail Inválido</small>
+                    </div>
                 </div>
                 <p class="text-muted">
                     Nunca compartilharemos seu e-mail com mais ninguém.
                 </p>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="mensagem">Mensagem</span>
-                    <textarea name="mensagem"rows="5" cols="60"></textarea>
+                <div class="form-row">
+                    <div class="form-group">
+                        <textarea name="mensagem" rows="5" cols="60" placeholder="Sua Mensagem" class="form-control" formControlName="inputMensagem" ></textarea>
+                        <small *ngIf="mensagem.valid && (mensagem.dirty || mensagem.touched)" class="form-text text-success">Ok</small>
+                        <small *ngIf="mensagem.invalid && (mensagem.dirty || mensagem.touched)" class="form-text text-danger">Mensagem Inválida</small>
+                    </div>
                 </div>
-                <Button class="mb-3" variant="primary" type="submit">
+                <Button class="btn btn-primary btn-lg mb-3" type="submit">
                     Enviar
                 </Button>
-            </Form>
+            </form>
         </div>
     </div>
 </div>
