@@ -17,8 +17,8 @@ export class ContatoComponent implements OnInit {
   ngOnInit(): void {
     this.formulario = new FormGroup({
       inputNome: new FormControl(this.minhaMensagem.nome, Validators.required ),
-      inputEmail: new FormControl(this.minhaMensagem.email, Validators.required ),
-      inputMensagem: new FormControl(this.minhaMensagem.mensagem, [ Validators.required, Validators.minLength(5) ])
+      inputEmail: new FormControl(this.minhaMensagem.email, [ Validators.required, Validators.email] ),
+      inputMensagem: new FormControl(this.minhaMensagem.mensagem, [ Validators.required, Validators.minLength(5)] )
     })
   }
 

@@ -1,37 +1,60 @@
-<div>
-    <h4 class="text-danger text-center" id="contato">CONTATO</h4>
+<div class="container">
+    <h4 class="text-danger text-center">CONTATO</h4>
     <h3 class="text-center">Mande uma mensagem</h3>
-    <div id="contato" class="row justify-content-md-center">
+    <div class="row justify-content-md-center">
         <div class="col col-lg-4">
-            <form  [formGroup]="formulario" novalidate (ngSubmit)="enviarMensagem()">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input name='nome' type="text" placeholder="Seu Nome" class="form-control" formControlName="inputNome" required/>
-                        <small *ngIf="nome.valid && (nome.dirty || nome.touched)" class="form-text text-success">Ok</small>
-                        <small *ngIf="nome.invalid && (nome.dirty || nome.touched)" class="form-text text-danger">Nome Inválido</small>
+            <form  [formGroup]="formulario" novalidate (ngSubmit)="enviarMensagem()" #formDir="ngForm" >
+
+                <div [hidden]="formDir.submitted">
+
+                    <div class="form-group mb-2">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" placeholder="Seu Nome" class="form-control" formControlName="inputNome" required />
+
+                        <div *ngIf="nome.invalid && (nome.dirty || nome.touched)" class="alert alert-danger">
+                            <div *ngIf="mensagem.errors?.['required']" >campo nome é obrigatório.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input name='email' type="email" placeholder="Seu e-Mail" class="form-control" formControlName="inputEmail" />
-                        <small *ngIf="email.valid && (email.dirty || email.touched)" class="form-text text-success">Ok</small>
-                        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="form-text text-danger">e-Mail Inválido</small>
+
+                    <div class="form-group mb-2">   
+                        <label for="email">e-Mail</label>
+                        <input id="email" type="email" placeholder="Seu e-Mail" class="form-control" formControlName="inputEmail" required emails/>
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                            <div *ngIf="mensagem.errors?.['required']" >não é um endereço de email válido.</div>
+                        </div>
+                        <p class="text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</p>
                     </div>
-                </div>
-                <p class="text-muted">
-                    Nunca compartilharemos seu e-mail com mais ninguém.
-                </p>
-                <div class="form-row">
-                    <div class="form-group">
-                        <textarea name="mensagem" rows="5" cols="60" placeholder="Sua Mensagem" class="form-control" formControlName="inputMensagem" ></textarea>
-                        <small *ngIf="mensagem.valid && (mensagem.dirty || mensagem.touched)" class="form-text text-success">Ok</small>
-                        <small *ngIf="mensagem.invalid && (mensagem.dirty || mensagem.touched)" class="form-text text-danger">Mensagem Inválida</small>
+
+                    <div class="form-group mb-2">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" cols="60" placeholder="Sua Mensagem" class="form-control" formControlName="inputMensagem" ></textarea>
+
+                        <div *ngIf="mensagem.invalid && (mensagem.dirty || mensagem.touched)" class="alert alert-danger">
+
+                            <div *ngIf="mensagem.errors?.['required']">
+                                campo mensagem é obrigatório.
+                            </div>
+                            <div *ngIf="mensagem.errors?.['minlength']">
+                                campo mensagem deverá possuir no mínimo 5 caracteres.
+                            </div>
+                        </div>
                     </div>
+                    
+                    <p>Complete o formulário para habilitar o botão Enviar.</p>
+                    <Button class="btn btn-primary m-3" type="submit" [disabled]="formulario.invalid" >
+                        Enviar
+                    </Button>
+                    <button type="button" class="btn btn-light ml-3 m-3" (click)="formDir.resetForm({})">
+                        Reset
+                    </button>
                 </div>
-                <Button class="btn btn-primary btn-lg mb-3" type="submit">
-                    Enviar
-                </Button>
             </form>
+
+            <div class="submitted-message" *ngIf="formDir.submitted">
+                <h3>Sua mensagem foi enviada!</h3>
+                <button type="button" (click)="formDir.resetForm({})" class="btn btn-light m-3">Nova Mensagem</button>
+            </div>
+
         </div>
     </div>
 </div>
