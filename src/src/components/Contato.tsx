@@ -14,7 +14,7 @@ export default function Contato() {
         setMensagem('')
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault()
         console.log('Sending')
         let data = {
@@ -57,9 +57,9 @@ export default function Contato() {
                         </div>
                         <div className="input-group mb-3" >
                             <span className="input-group-text">Mensagem</span>
-                            <textarea className='form-control' rows={3} value={mensagem} onChange={(e) => { setMensagem(e.target.value) }} as="textarea" />
+                            <textarea className='form-control' rows={3} value={mensagem} onChange={(e) => { setMensagem(e.target.value) }} />
                         </div>
-                        <button onClick={(e) => { handleSubmit(e) }} className="mb-3" variant="primary" type="submit">
+                        <button onClick={(e) => { handleSubmit(e) }} className="mb-3 primary" type="submit">
                             Enviar
                         </button>
                         {/* <button className="mb-3 primary" type="submit">

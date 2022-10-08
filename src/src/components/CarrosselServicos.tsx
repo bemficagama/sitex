@@ -39,7 +39,7 @@ export default function CarrosselServicos() {
         <div>
             <div id="servicos_icons" className="container mb-3">
                 <div className="row justify-content-md-center ">
-                    <div className="col col-lg-2 align-self-center justify-content-center text-center" alt="Vendas">
+                    <div className="col col-lg-2 align-self-center justify-content-center text-center">
                         <a data-bs-target="#carossel-servicos" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" id="btn1" >
                             <FontAwesomeIcon icon={faCartShopping} size='5x' />
                             <h5 className="text-center">

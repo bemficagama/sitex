@@ -2,7 +2,7 @@ export default function CarrosselDepoimentos() {
     return (
         <div>
             <div style={{display: 'block', padding: 30}}>
-                <div className="carousel slide text-center" data-bs-ride="carousel" indicators="false">
+                <div className="carousel slide text-center" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="4000">
                             <h2>&quot;São muito profissionais no que se propõe a fazer.&quot;</h2>
