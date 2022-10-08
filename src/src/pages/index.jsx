@@ -3,7 +3,6 @@ import Rodape from "../components/Rodape"
 import Head from 'next/head'
 import Image from 'next/image'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import CarrosselPrincipal from "../components/CarrosselPrincipal"
 import QuemSomos from "../components/QuemSomos"
 import NossosServicos from "../components/NossosServicos"

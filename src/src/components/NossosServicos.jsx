@@ -1,14 +1,13 @@
 import styles from '../styles/NossosServicos.module.css'
-import { Container, Row, Col } from 'react-bootstrap'
 
 export default function NossosServicos() {
     return (
         <div>
-        <hr/>
-            <Container className="mb-3">
-                <Row>
-                    <Col sm={3}></Col>
-                    <Col sm={6}>
+            <hr />
+            <div className="container mb-3">
+                <div className="row">
+                    <div className="col sm-3" ></div>
+                    <div className="col sm-6">
                         <h5 className="text-danger">O QUE FAZEMOS</h5>
                         <h2>NOSSOS SERVIÇOS</h2>
                         <p className="card-text">Serviços com garantia e qualidade técnica. Atualização constante
@@ -16,10 +15,10 @@ export default function NossosServicos() {
                             Acompanhamento e Controle dos serviços através de nossa
                             plataforma de controle de ordens serviços.</p>
                         <p className="card-text"><small className="text-muted">Leia mais</small></p>
-                    </Col>
-                    <Col sm={3}></Col>
-                </Row>
-            </Container>
+                    </div>
+                    <div className="col sm-3"></div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,3 @@
-import { Form, Group, Button } from "react-bootstrap";
 import { useState } from 'react'
 
 export default function Contato() {
@@ -39,33 +38,36 @@ export default function Contato() {
     }
 
     return (
-        <div>
+        < div >
             <h4 className="text-danger text-center" id="contato">CONTATO</h4>
             <h3 className="text-center">Mande uma mensagem</h3>
             <div id="contato" className="row justify-content-md-center">
                 <div className="col col-lg-4">
-                    <Form>
-                        <Form.Group className="mb-3" controlId="contato_nome">
-                            <Form.Label>Nome</Form.Label>
-                            <Form.Control name='nome' value={nome} type="input" onChange={(e) => { setNome(e.target.value) }} placeholder="Seu Nome" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="contato_email">
-                            <Form.Label>Endereço de Email</Form.Label>
-                            <Form.Control name='email' value={email} type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Seu e-Mail" />
-                            <Form.Text className="text-muted">
+                    <form action="/api/contact" method="post">
+                        <div className="input-group mb-3" >
+                            <span className="input-group-text">Nome</span>
+                            <input type="text" className='form-control' minLength={3} name='nome' value={nome} onChange={(e) => { setNome(e.target.value) }} placeholder="Seu Nome" required />
+                        </div>
+                        <div className="input-group mb-3" >
+                            <span className="input-group-text">e-Mail</span>
+                            <input type="email" className='form-control' name='email' value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Seu e-Mail" required />
+                            <p>
                                 Nunca compartilharemos seu e-mail com mais ninguém.
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="contato_mensagem">
-                            <Form.Label>Mensagem</Form.Label>
-                            <Form.Control name='mensagem' value={mensagem} onChange={(e) => { setMensagem(e.target.value) }} as="textarea" rows={3} />
-                        </Form.Group>
-                        <Button onClick={(e) => { handleSubmit(e) }} className="mb-3" variant="primary" type="submit">
+                            </p>
+                        </div>
+                        <div className="input-group mb-3" >
+                            <span className="input-group-text">Mensagem</span>
+                            <textarea className='form-control' rows={3} value={mensagem} onChange={(e) => { setMensagem(e.target.value) }} as="textarea" />
+                        </div>
+                        {/* <button onClick={(e) => { handleSubmit(e) }} className="mb-3" variant="primary" type="submit">
                             Enviar
-                        </Button>
-                    </Form>
+                        </button> */}
+                        <button className="mb-3 primary" type="submit">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

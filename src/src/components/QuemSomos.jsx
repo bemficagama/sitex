@@ -1,16 +1,14 @@
 //import styles from '../styles/QuemSomos.module.css'
-import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'next/image'
 import logoHistoria from '../../public/img/logo_historia.png'
 
 export default function QuemSomos() {
     return (
         <div>
-        <hr/>
-            <Container className="mb-3" id="quemsomos">
-                <Row>
-                    <Col sm={2}></Col>
-                    <Col sm={7}>
+            <hr />
+            <div className="container mb-3" id="quemsomos" >
+                <div className="row" >
+                    <div className="col sm-8">
                         <h5 className="card-title text-danger">QUEM SOMOS</h5>
                         <h2>NOSSA HISTÓRIA</h2>
                         <p className="card-text">A Microben atua no segmento de tecnologia desde o ano 2000,
@@ -23,12 +21,12 @@ export default function QuemSomos() {
                             servidores, rede, segurança e energia solar, com um nível
                             de experiência Sênior nos serviços que oferece.</p>
                         <p className="card-text"><small className="text-muted">Leia mais</small></p>
-                    </Col>
-                    <Col sm={3} className="align-self-center">
+                    </div>
+                    <div className="col sm-4 ">
                         <Image src={logoHistoria} className="card-img" alt="..." />
-                    </Col>
-                </Row>
-            </Container>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
