@@ -13,7 +13,7 @@ type Data = {
     res: NextApiResponse<Data>
   ) {
 
-    const nodeoutlook = require('nodejs-nodemailer-outlook')
+    let nodeoutlook = require('nodejs-nodemailer-outlook')
 
     const MAIL: Data = {
         from: process.env.MAIL_FROM!,
