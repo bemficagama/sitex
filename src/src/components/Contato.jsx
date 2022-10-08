@@ -43,7 +43,7 @@ export default function Contato() {
             <h3 className="text-center">Mande uma mensagem</h3>
             <div id="contato" className="row justify-content-md-center">
                 <div className="col col-lg-4">
-                    <form action="/api/contact" method="post">
+                    <form>
                         <div className="input-group mb-3" >
                             <span className="input-group-text">Nome</span>
                             <input type="text" className='form-control' minLength={3} name='nome' value={nome} onChange={(e) => { setNome(e.target.value) }} placeholder="Seu Nome" required />
@@ -59,12 +59,12 @@ export default function Contato() {
                             <span className="input-group-text">Mensagem</span>
                             <textarea className='form-control' rows={3} value={mensagem} onChange={(e) => { setMensagem(e.target.value) }} as="textarea" />
                         </div>
-                        {/* <button onClick={(e) => { handleSubmit(e) }} className="mb-3" variant="primary" type="submit">
-                            Enviar
-                        </button> */}
-                        <button className="mb-3 primary" type="submit">
+                        <button onClick={(e) => { handleSubmit(e) }} className="mb-3" variant="primary" type="submit">
                             Enviar
                         </button>
+                        {/* <button className="mb-3 primary" type="submit">
+                            Enviar
+                        </button> */}
                     </form>
                 </div>
             </div>
