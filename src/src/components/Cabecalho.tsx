@@ -16,7 +16,7 @@ export default function Cabecalho() {
                     <div className="collapse navbar-collapse" id="basic-navbar-nav">
                         <ul className="navbar-nav">
                             <li className="nav-item"><a className="nav-link" aria-current="page" href="#quemsomos" >A microben</a></li>
-                            <li className="nav-item"><a className="nav-link" aria-current="page" >Serviços</a></li>
+                            <li className="nav-item"><a className="nav-link" aria-current="page" href="#servicos" >Serviços</a></li>
                             <li className="nav-item"><a className="nav-link" aria-current="page" href="#contato">Contato</a></li>
                         </ul>
                     </div>

@@ -85,7 +85,7 @@ export default function CarrosselServicos() {
             <div style={{display: 'block', padding: 30}} >
                 <div className="carousel slide" id="carossel-servicos" data-bs-ride="carousel" >
                     <div className="carousel-inner">
-                        <div className="carousel-item active" aria-activedescendant="#btn1">
+                        <div className="carousel-item active">
                             <div className="card mb-3">
                                 <div className="row no-gutters">
                                     <div className="col-md-6">
