@@ -220,7 +220,7 @@ export default function CarrosselServicos() {
                                             <h5 className="card-title">Manutenção</h5>
                                             <p className="card-text">Independente da área de atuação e tamanho da empresa 
                                             ou residência, a Manutenção de TI é fundamental. Mesmo com as melhores 
-                                            metodologias de gerência sempre deve-se estar atualizado e em perfeito 
+                                            metodologias de gerência sempre deve-se deixar tudo atualizado e em perfeito 
                                             funcionamento. 
                                             </p>
                                             <p className="card-text">A Manutenção de TI baseia-se em processos e atividades 
