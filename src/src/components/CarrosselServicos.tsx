@@ -1,5 +1,5 @@
 import styles from '../styles/CarrosselServicos.module.css'
-import { faCartShopping, faNetworkWired, faServer, faShieldAlt, faSolarPanel } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faNetworkWired, faScrewdriver, faScrewdriverWrench, faServer, faShieldAlt, faSolarPanel } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import fundoVenda from '../../public/img/fundo_venda.jpg'
@@ -7,6 +7,7 @@ import fundoServidor from '../../public/img/fundo_servidor.jpg'
 import fundoRede from '../../public/img/fundo_rede.jpg'
 import fundoSeguranca from '../../public/img/fundo_seguranca.jpg'
 import fundoEnergia from '../../public/img/fundo_energia.jpg'
+import fundoManutencao from '../../public/img/fundo_manutencao.jpg'
 import { useState } from 'react';
 
 
@@ -40,7 +41,7 @@ export default function CarrosselServicos() {
             <div id="servicos_icons" className="container mb-3">
                 <div className="row justify-content-md-center ">
                     <div className="col col-lg-2 align-self-center justify-content-center text-center">
-                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" id="btn1" >
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="0" aria-current="true" aria-label="Slide 0" id="btn1" >
                             <FontAwesomeIcon icon={faCartShopping} size='5x' />
                             <h5 className="text-center">
                                 Vendas
@@ -48,7 +49,7 @@ export default function CarrosselServicos() {
                         </a>
                     </div>
                     <div className="col col-lg-2 align-self-center justify-content-center text-center">
-                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="1" aria-label="Slide 2">
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="1" aria-label="Slide 1">
                             <FontAwesomeIcon icon={faServer} size='5x' />
                             <h5 className="text-center">
                                 Servidores
@@ -56,7 +57,7 @@ export default function CarrosselServicos() {
                         </a>
                     </div>
                     <div className="col col-lg-2 align-self-center justify-content-center text-center">
-                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="2" aria-label="Slide 3">
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="2" aria-label="Slide 2">
                             <FontAwesomeIcon icon={faNetworkWired} size='5x' />
                             <h5 className="text-center">
                                 Rede
@@ -64,7 +65,7 @@ export default function CarrosselServicos() {
                         </a>
                     </div>
                     <div className="col col-lg-2 align-self-center justify-content-center text-center">
-                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="3" aria-label="Slide 4">
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="3" aria-label="Slide 3">
                             <FontAwesomeIcon icon={faShieldAlt} size='5x' />
                             <h5 className="text-center">
                                 Segurança
@@ -72,17 +73,25 @@ export default function CarrosselServicos() {
                         </a>
                     </div>
                     <div className="col col-lg-2 align-self-center justify-content-center text-center">
-                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="4" aria-label="Slide 5">
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="4" aria-label="Slide 4">
                             <FontAwesomeIcon icon={faSolarPanel} size='5x' />
                             <h5 className="text-center">
                                 Energia Solar
                             </h5>
                         </a>
                     </div>
+                    <div className="col col-lg-2 align-self-center justify-content-center text-center">
+                        <a data-bs-target="#carossel-servicos" data-bs-slide-to="5" aria-label="Slide 5">
+                            <FontAwesomeIcon icon={faScrewdriverWrench} size='5x' />
+                            <h5 className="text-center">
+                                Manutenção
+                            </h5>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div style={{display: 'block', padding: 30}} >
+            <div style={{ display: 'block', padding: 30 }} >
                 <div className="carousel slide" id="carossel-servicos" data-bs-ride="carousel" >
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -202,6 +211,32 @@ export default function CarrosselServicos() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="carousel-item">
+                            <div className="card mb-3">
+                                <div className="row no-gutters">
+                                    <div className="col-md-6">
+                                        <div id="cartao_manutencao" className="card-body cartao_servico">
+                                            <h5 className="card-title">Manutenção</h5>
+                                            <p className="card-text">Independente da área de atuação e tamanho da empresa 
+                                            ou residência, a Manutenção de TI é fundamental. Mesmo com as melhores 
+                                            metodologias de gerência sempre deve-se estar atualizado e em perfeito 
+                                            funcionamento. 
+                                            </p>
+                                            <p className="card-text">A Manutenção de TI baseia-se em processos e atividades 
+                                            aplicados a sistemas e equipamentos. Tendo como objetivos manter tudo com 
+                                            máxima eficácia, disponibilidade e segurança.
+                                            </p>
+                                            <p className="card-text"><small className="text-muted">Leia mais</small></p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <Image src={fundoManutencao} className="card-img" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
