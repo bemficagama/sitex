@@ -150,7 +150,7 @@ export default function CarrosselServicos() {
                                     </div>
                                     <div className="col-md-6">
                                         <div id="cartao_rede" className="card-body cartao_servico">
-                                            <h5 className="card-title">Rede</h5>
+                                            <h5 className="card-title">Rede Lógica e Infraestrutura</h5>
                                             <p className="card-text">Somos especialistas em soluções de rede:
                                                 Mikrotik, Rede Wi-Fi Profissional, Firewall Empresarial, Cabeamento
                                                 Estruturado, Infraestrutura, Análise de Tráfego e outros.
@@ -170,7 +170,7 @@ export default function CarrosselServicos() {
                                 <div className="row no-gutters">
                                     <div className="col-md-6">
                                         <div id="cartao_seguranca" className="card-body cartao_servico">
-                                            <h5 className="card-title">Segurança</h5>
+                                            <h5 className="card-title">Segurança por Vídeo e Controle de Acesso</h5>
                                             <p className="card-text">Segurança é essencial, seja qual for o tamanho
                                                 do negócio ou residência, fornecemos soluções em CFTV (Vigilância
                                                 por Vídeo) de alta qualidade e tecnologia, Controle de Acesso Profissional
@@ -217,7 +217,7 @@ export default function CarrosselServicos() {
                                 <div className="row no-gutters">
                                     <div className="col-md-6">
                                         <div id="cartao_manutencao" className="card-body cartao_servico">
-                                            <h5 className="card-title">Manutenção</h5>
+                                            <h5 className="card-title">Manutenção de TI e Informárica</h5>
                                             <p className="card-text">Independente da área de atuação e tamanho da empresa 
                                             ou residência, a Manutenção de TI é fundamental. Mesmo com as melhores 
                                             metodologias de gerência sempre deve-se deixar tudo atualizado e em perfeito 
@@ -236,7 +236,6 @@ export default function CarrosselServicos() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

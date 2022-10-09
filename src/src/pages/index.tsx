@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Microben</title>
-        <meta name='description' content='Microben Tecnologia' />
+        <meta name='description' content='Microben Tecnologia, ALM Comércio, Informática, Rede Lógica e Infraestrutura, Segurança por Vídeo e Controle de Acesso, Energia Solar, Manutenção de TI' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png" />
