@@ -1,6 +1,6 @@
 //import styles from '../styles/QuemSomos.module.css'
 import Image from 'next/image'
-import logoHistoria from '../../public/img/logo_historia.png'
+import logoHistoria from '../../../public/img/logo_historia.png'
 
 export default function QuemSomos() {
     return (

@@ -2,12 +2,12 @@ import styles from '../styles/CarrosselServicos.module.css'
 import { faCartShopping, faNetworkWired, faScrewdriver, faScrewdriverWrench, faServer, faShieldAlt, faSolarPanel } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import fundoVenda from '../../public/img/fundo_venda.jpg'
-import fundoServidor from '../../public/img/fundo_servidor.jpg'
-import fundoRede from '../../public/img/fundo_rede.jpg'
-import fundoSeguranca from '../../public/img/fundo_seguranca.jpg'
-import fundoEnergia from '../../public/img/fundo_energia.jpg'
-import fundoManutencao from '../../public/img/fundo_manutencao.jpg'
+import fundoVenda from '../../../public/img/fundo_venda.jpg'
+import fundoServidor from '../../../public/img/fundo_servidor.jpg'
+import fundoRede from '../../../public/img/fundo_rede.jpg'
+import fundoSeguranca from '../../../public/img/fundo_seguranca.jpg'
+import fundoEnergia from '../../../public/img/fundo_energia.jpg'
+import fundoManutencao from '../../../public/img/fundo_manutencao.jpg'
 import { useState } from 'react';
 
 

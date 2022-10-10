@@ -1,8 +1,8 @@
 import styles from '../styles/CarrosselPrincipal.module.css'
 import Image from 'next/image'
-import bannerPaineis from '../../public/img/banner_paineis.jpeg'
-import bannerSolucao from '../../public/img/banner_solucao.jpeg'
-import bannerVendas from '../../public/img/banner_vendas.jpeg'
+import bannerPaineis from '../../../public/img/banner_paineis.jpeg'
+import bannerSolucao from '../../../public/img/banner_solucao.jpeg'
+import bannerVendas from '../../../public/img/banner_vendas.jpeg'
 
 export default function CarrosselPrincipal() {
     return (

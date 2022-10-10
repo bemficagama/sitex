@@ -9,40 +9,42 @@ export default function Rodape() {
     return (
         <div className="rodape" >
             <div className="bg-danger">
-                <div className="d-flex bd-highlight">
-                    <div className="p-2 bd-highlight">
-                        <Image src={logoRodape} alt="Logo Microben" />
+                <div className='row'>
+                    <div className="col d-flex bd-highlight">
+                        <div className="p-2 bd-highlight">
+                            <Image src={logoRodape} alt="Logo Microben" />
+                        </div>
+                    </div>
+                    <div className="col d-flex text-white">
+                        <div className="p-2">
+                            <FontAwesomeIcon icon={faEnvelopeSquare} size='2x' />
+                        </div>
+                        <div className="p-2">
+                            <h5>vendas@microben.com.br</h5>
+                        </div>
+                    </div>
+                    <div className="col d-flex bd-highlight text-white">
+                        <div className="p-2 bd-highlight">
+                            <FontAwesomeIcon icon={faPhone} size='2x' />
+                        </div>
+                        <div className="p-2 bd-highlight">
+                            <h5><strong>(92) 3302-3404</strong></h5>
+                        </div>
+                        <div className="p-2 bd-highlight">
+                            <FontAwesomeIcon icon={faMobile} size='2x' />
+                        </div>
+                        <div className="p-2 bd-highlight">
+                            <h5><strong>(92) 98823-5697</strong></h5>
+                        </div>
                     </div>
                 </div>
-                <div className="d-flex text-white">
-                    <div className="p-2">
-                        <FontAwesomeIcon icon={faEnvelopeSquare} size='2x' />
-                    </div>
-                    <div className="p-2">
-                        <h5>vendas@microben.com.br</h5>
-                    </div>
-                </div>
+                <div className='row'></div>
                 <div className="d-flex bd-highlight text-white">
                     <div className="p-2 bd-highlight">
-                        <FontAwesomeIcon icon={faPhone} size='2x' />
+                        <FontAwesomeIcon icon={faMapMarkedAlt} size='2x' />
                     </div>
                     <div className="p-2 bd-highlight">
-                        <h5><strong>(92) 3302-3404</strong></h5>
-                    </div>
-                    <div className="p-2 bd-highlight">
-                    <FontAwesomeIcon icon={faMobile} size='2x' />
-                    </div>
-                    <div className="p-2 bd-highlight">
-                        <h5><strong>(92) 98823-5697</strong></h5>
-                    </div>
-                </div>
-                <div className="d-flex bd-highlight text-white">
-                    <div className="p-2 bd-highlight">
-                    <FontAwesomeIcon icon={faMapMarkedAlt} size='2x' />
-                    </div>
-                    <div className="p-2 bd-highlight">
-                        <h6>Rua Yucatan, Quadra G, Lote 7 - Alvorada</h6>
-                        <h6>69042-222</h6>
+                        <h6>Rua Yucatan, Quadra G, Lote 7 - Alvorada 69.042-222</h6>
                     </div>
                     <div className="p-2 bd-highlight">
                         <h6>Manaus - Amazonas</h6>
