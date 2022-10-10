@@ -217,7 +217,7 @@ export default function CarrosselServicos() {
                                 <div className="row no-gutters">
                                     <div className="col-md-6">
                                         <div id="cartao_manutencao" className="card-body cartao_servico">
-                                            <h5 className="card-title">Manutenção de TI e Informárica</h5>
+                                            <h5 className="card-title">Manutenção de TI e Informática</h5>
                                             <p className="card-text">Independente da área de atuação e tamanho da empresa 
                                             ou residência, a Manutenção de TI é fundamental. Mesmo com as melhores 
                                             metodologias de gerência sempre deve-se deixar tudo atualizado e em perfeito 
