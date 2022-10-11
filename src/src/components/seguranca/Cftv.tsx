@@ -1,8 +1,8 @@
 //import styles from '../styles/QuemSomos.module.css'
 import Image from 'next/image'
-import pageCftv from '../../public/img/page_cftv.jpg'
+import pageCftv from '../../../public/img/page_cftv.jpg'
 
-export default function CftvComponent() {
+export default function Cftv() {
     return (
         <div>
             <figure className="figure w-50 float-end m-3" >

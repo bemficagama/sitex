@@ -1,12 +1,12 @@
 import Cabecalho from "../../components/Cabecalho"
 import Rodape from "../../components/Rodape"
-import CftvComponent from "../../components/seguranca/Cftv"
+import Seguranca from "../../components/seguranca/Seguranca"
 
-export default function Cftv() {
+export default function Index() {
     return (
         <div>
             <Cabecalho />
-            <CftvComponent />
+            <Seguranca />
             <Rodape />
         </div>
     )

@@ -1,6 +1,6 @@
 import CarrosselPrincipal from "./CarrosselPrincipal"
 import QuemSomos from "./QuemSomos"
-import NossosServicos from "./NossosServicos"
+import Solucoes from "./Solucoes"
 import CarrosselServicos from "./CarrosselServicos"
 import CarrosselDepoimentos from "./CarrosselDepoimentos"
 import Contato from "./Contato"
@@ -10,7 +10,7 @@ export default function Principal() {
         <div> 
             <CarrosselPrincipal />
             <QuemSomos />
-            <NossosServicos />
+            <Solucoes />
             <CarrosselServicos />
             <CarrosselDepoimentos />
             <Contato />
