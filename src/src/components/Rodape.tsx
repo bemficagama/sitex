@@ -23,7 +23,7 @@ export default function Rodape() {
                             <h5>vendas@microben.com.br</h5>
                         </div>
                     </div>
-                    <div className="col d-flex bd-highlight text-white">
+                    <div className="col-5 d-flex bd-highlight text-white">
                         <div className="p-2 bd-highlight">
                             <FontAwesomeIcon icon={faPhone} size='2x' />
                         </div>
@@ -52,9 +52,7 @@ export default function Rodape() {
                     <div className="ms-auto p-2 bd-highlight">
                         <div className='row'>
                             <div className='col'>
-                                <FontAwesomeIcon icon={faFacebook} size='3x' />
-                            </div>
-                            <div className='col'>
+                                <FontAwesomeIcon icon={faFacebook} size='3x' className='me-2' />
                                 <FontAwesomeIcon icon={faInstagram} size='3x' />
                             </div>
                         </div>
