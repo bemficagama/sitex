@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
 
-    const handleRouteChange = url => {
+    const handleRouteChange = (url: any) => {
       gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
