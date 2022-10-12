@@ -8,7 +8,7 @@ export default function Servidor() {
         <div>
             <div className='row m-3'>
                 <div className='col'>
-                    <figure className="figure w-50 float-start m-3" >
+                    <figure className="figure w-50 float-end m-3" >
                         <Image src={fundoServidor} className="figure-img rounded img-thumbnail" alt="..." />
                     </figure>
                     <h2>

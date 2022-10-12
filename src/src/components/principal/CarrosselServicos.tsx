@@ -12,7 +12,10 @@ import fundoManutencao from '../../../public/img/fundo_manutencao.jpg'
 import { useState } from 'react';
 import Seguranca from '../seguranca/Seguranca'
 import Venda from '../venda/Venda'
-import Servidor from '../servidores/Servidores'
+import Servidor from '../servidor/Servidor'
+import Energia from '../enregia/Energia'
+import Manutencao from '../manutencao/Manutencao'
+import Rede from '../rede/Rede'
 
 
 //<Image src={fundoVenda} className="card-img" alt="..." />
@@ -122,25 +125,7 @@ export default function CarrosselServicos() {
                         </div>
                         <div className="carousel-item">
                             <div className="card mb-3">
-                                <div className="row no-gutters">
-                                    <div className="col-md-6">
-                                        <Image src={fundoRede} className="card-img" alt="..." />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div id="cartao_rede" className="card-body cartao_servico">
-                                            <h5 className="card-title">Rede Lógica e Infraestrutura</h5>
-                                            <p className="card-text">Somos especialistas em soluções de rede:
-                                                Mikrotik, Rede Wi-Fi Profissional, Firewall Empresarial, Cabeamento
-                                                Estruturado, Infraestrutura, Análise de Tráfego e outros.
-                                            </p>
-                                            <p className="card-text">Realizamos Projeto de Rede, levantamento de
-                                                necessidades, indicação das melhores soluções de serviços e equipamentos
-                                                com melhor custo benefício.
-                                            </p>
-                                            <p className="card-text"><small className="text-muted">Leia mais</small></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Rede />
                             </div>
                         </div>
                         <div className="carousel-item">
@@ -150,49 +135,13 @@ export default function CarrosselServicos() {
                         </div>
                         <div className="carousel-item">
                             <div className="card mb-3">
-                                <div className="row no-gutters">
-                                    <div className="col-md-6">
-                                        <Image src={fundoEnergia} className="card-img" alt="..." />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div id="cartao_energia" className="card-body cartao_servico">
-                                            <h5 className="card-title">Energia Solar</h5>
-                                            <p className="card-text">A utilização da Energia Solar só trás vantagens, a
-                                                ajuda ao Meio Ambiente, reduzindo a criação de novas usinas a base de
-                                                combustível fóssil, o lado de economia, onde poderá reduzir em até 95%
-                                                a conta de energia, gerando crédito para uso posterior ou compartilhado.
-                                                Não importa o atrativo, temos os melhores equipamentos do mundo, com
-                                                instalação técnica profissional.
-                                            </p>
-                                            <p className="card-text"><small className="text-muted">Leia mais</small></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Energia />
                             </div>
                         </div>
 
                         <div className="carousel-item">
                             <div className="card mb-3">
-                                <div className="row no-gutters">
-                                    <div className="col-md-6">
-                                        <div id="cartao_manutencao" className="card-body cartao_servico">
-                                            <h5 className="card-title">Manutenção de TI e Informática</h5>
-                                            <p className="card-text">Independente da área de atuação e tamanho da empresa
-                                                ou residência, a Manutenção de TI é fundamental. Mesmo com as melhores
-                                                metodologias de gerência sempre deve-se deixar tudo atualizado e em perfeito
-                                                funcionamento.
-                                            </p>
-                                            <p className="card-text">A Manutenção de TI baseia-se em processos e atividades
-                                                aplicados a sistemas e equipamentos. Tendo como objetivos manter tudo com
-                                                máxima eficácia, disponibilidade e segurança.
-                                            </p>
-                                            <p className="card-text"><small className="text-muted">Leia mais</small></p>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <Image src={fundoManutencao} className="card-img" alt="..." />
-                                    </div>
-                                </div>
+                                <Manutencao />
                             </div>
                         </div>
                     </div>
