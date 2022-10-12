@@ -31,8 +31,8 @@ export default function Seguranca() {
 
                     <ul>
                         <li><Link href="/seguranca/cftv"><a>CFTV</a></Link></li>
-                        <li><Link href="#"><a>Controle de Acesso</a></Link></li>
-                        <li><Link href="#"><a>Alarme</a></Link></li>
+                        <li><Link href="/seguranca/controle-acesso"><a>Controle de Acesso</a></Link></li>
+                        <li><Link href="/seguranca/alarme"><a>Alarme</a></Link></li>
                     </ul>
                 </div>
             </div>

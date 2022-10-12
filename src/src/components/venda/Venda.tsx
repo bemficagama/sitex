@@ -14,7 +14,7 @@ export default function Venda() {
                     <h2>
                         <Link href="/venda">
                             <a>
-                                Vendas
+                                Vendas: Venda Direta e Especializada
                             </a>
                         </Link>
                     </h2>
