@@ -14,11 +14,11 @@ export default function CarrosselPrincipal() {
                     <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="2000">
-                        <Image src={bannerDesenvolvimento} className="d-block w-100" alt="..." />
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <Image src={bannerVendas} className="d-block w-100" alt="..." />
                         <div className="carousel-caption">
-                            <h1 className="display-3">DESENVOLVIMENTO WEB</h1>
-                            <h2>ENGENHARIA DE SOFTWARE</h2>
+                            <h1 className="display-3">VENDA DIRETA E ESPECIALIZADA</h1>
+                            <h2>COM AS MELHORES MARCAS DO MERCADO</h2>
                         </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
@@ -28,11 +28,11 @@ export default function CarrosselPrincipal() {
                             <h2>CONSULTORIA ESTRATÉGICA PARA SUA EMPRESA</h2>
                         </div>
                     </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <Image src={bannerVendas} className="d-block w-100" alt="..." />
+                    <div className="carousel-item active" data-bs-interval="2000">
+                        <Image src={bannerDesenvolvimento} className="d-block w-100" alt="..." />
                         <div className="carousel-caption">
-                            <h1 className="display-3">VENDA DIRETA E ESPECIALIZADA</h1>
-                            <h2>COM AS MELHORES MARCAS DO MERCADO</h2>
+                            <h1 className="display-3">DESENVOLVIMENTO WEB</h1>
+                            <h2>ENGENHARIA DE SOFTWARE</h2>
                         </div>
                     </div>
                 </div>

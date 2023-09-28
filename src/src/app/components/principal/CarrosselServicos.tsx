@@ -2,7 +2,7 @@
 
 import styles from '../styles/CarrosselServicos.module.css'
 import Link from 'next/link'
-import { faCartShopping, faNetworkWired, faScrewdriver, faScrewdriverWrench, faServer, faShieldAlt, faSolarPanel } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faNetworkWired, faScrewdriver, faScrewdriverWrench, faServer, faShieldAlt, faCode } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import fundoVenda from '../../assets/img/fundo_venda.jpg'
@@ -15,7 +15,7 @@ import { useState } from 'react';
 import Seguranca from '../seguranca/Seguranca'
 import Venda from '../venda/Venda'
 import Servidor from '../servidor/Servidor'
-import Energia from '../energia/Energia'
+import Desenvolvimento from '../desenvolvimento/page'
 import Manutencao from '../manutencao/Manutencao'
 import Rede from '../rede/Rede'
 
@@ -82,9 +82,9 @@ export default function CarrosselServicos() {
                 </div>
                 <div className="justify-content-center text-center">
                     <Link href="#" data-bs-target="#carossel-servicos" data-bs-slide-to="4" aria-label="Slide 4">
-                        <FontAwesomeIcon icon={faSolarPanel} size='5x' />
+                        <FontAwesomeIcon icon={faCode} size='5x' />
                         <h5 className="text-center">
-                            Energia Solar
+                            Desenvolvimento
                         </h5>
                     </Link>
                 </div>
@@ -123,7 +123,7 @@ export default function CarrosselServicos() {
                         </div>
                         <div className="carousel-item">
                             <div className="card mb-3">
-                                <Energia />
+                                <Desenvolvimento />
                             </div>
                         </div>
 

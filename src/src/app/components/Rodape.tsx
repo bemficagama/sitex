@@ -25,10 +25,10 @@ export default function Rodape() {
                     </div>
                     <div className="d-flex bd-highlight text-white">
                         <div className="p-2 bd-highlight">
-                            <FontAwesomeIcon icon={faPhone} size='2x' />
+                            <FontAwesomeIcon icon={faMobile} size='2x' />
                         </div>
                         <div className="p-2 bd-highlight">
-                            <h5><strong>(92) 3302-3404</strong></h5>
+                            <h5><strong>(92) 99114-1990</strong></h5>
                         </div>
                         <div className="p-2 bd-highlight">
                             <FontAwesomeIcon icon={faMobile} size='2x' />
